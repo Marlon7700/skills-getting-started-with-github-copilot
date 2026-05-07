@@ -74,6 +74,64 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Participants section */
+.participants {
+  margin-top: 10px;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.participants ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participant-item {
+  background-color: #eef3ff;
+  color: #0b3d91;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.participants.empty em {
+  color: #666;
+  font-style: italic;
+}
+
+/* Remove button inside participant chip */
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.participant-item .participant-email {
+  margin-right: 8px;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #b00020;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.remove-participant:hover {
+  background: rgba(176, 0, 32, 0.08);
+}
+
 .form-group {
   margin-bottom: 15px;
 }
